@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var HinhChuNhat = function(chieuDai, chieuRong) {
+        this.chieuDai = chieuDai;
+        this.chieuRong = chieuRong;
+
+        this.getChieuDai = function () {
+            return this.chieuDai;
+        }
+        this.getChieuRong = function () {
+            return this.chieuRong;
+        }
+        this.setChieuDai = function (d) {
+            this.chieuDai = d;
+        }
+        this.setChieuRong = function (r) {
+            this.chieuRong = r;
+        }
+        this.getChuvi = function () {
+            return (this.chieuRong + this.chieuDai) * 2;
+        }
+    };
+    var hinhChuNhat = new HinhChuNhat(2,4);
+    var chuVi = hinhChuNhat.getChuvi();
+    document.write(chuVi);
+</script>
+
+</body>
+</html>
